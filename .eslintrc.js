@@ -11,6 +11,7 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
+      tsx: true
     },
     ecmaVersion: 12,
     sourceType: 'module',
@@ -21,5 +22,7 @@ module.exports = {
   ],
   rules: {
     'no-param-reassign': 0,
+    'import/no-unresolved': 0,
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
   },
 };

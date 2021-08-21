@@ -24,7 +24,9 @@ const borders = createSlice({
   },
 });
 
+const borderReducer = borders.reducer;
+
 export const {
   modifyLeftBottom, modifyLeftTop, modifyRightBottom, modifyRightTop,
 } = borders.actions;
-export default borders.reducer;
+export default borderReducer;
