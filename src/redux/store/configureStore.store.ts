@@ -1,8 +1,8 @@
-import { configureStore, combineReducers } from '@reduxjs/toolkit'
-import BorderReducer from '../reducers/borders.reducer'
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import borderReducer from '../reducers/borders.reducer';
 
-const reducer = combineReducers({borders: BorderReducer})
+const reducer = combineReducers({ borders: borderReducer });
 
-const store = configureStore({reducer})
+const store = configureStore({ reducer });
 
-export default store
+export default store;

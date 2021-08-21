@@ -1,8 +1,10 @@
+/* eslint-disable no-use-before-define */
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Provider } from 'react-redux'
 
-import store from './src/redux/store/configureStore.store'
+import { StyleSheet, Text, View } from 'react-native';
+import { Provider } from 'react-redux';
+
+import store from './src/redux/store/configureStore.store';
 
 export default function App() {
   return (
