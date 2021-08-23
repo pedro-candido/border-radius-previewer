@@ -12,9 +12,13 @@ export default function App() {
   return (
     <Provider store={store}>
       <View style={styles.container}>
-        <InputGroup verticalAlign="top" />
+        <InputGroup
+          verticalAlign="top"
+        />
         <Box />
-        <InputGroup verticalAlign="bottom" />
+        <InputGroup
+          verticalAlign="bottom"
+        />
       </View>
     </Provider>
   );

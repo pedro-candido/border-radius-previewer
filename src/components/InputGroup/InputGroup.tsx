@@ -6,13 +6,12 @@ import { Input } from '../Input';
 
 interface InputGroupProps {
     verticalAlign: 'top' | 'bottom',
-    radius: 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius'
 }
 
-const InputGroup = ({ verticalAlign, radius }: InputGroupProps) => (
+const InputGroup = ({ verticalAlign }: InputGroupProps) => (
   <View>
-    <Input radius={radius} position={`${verticalAlign}Left`} />
-    <Input radius={radius} position={`${verticalAlign}Right`} />
+    <Input position={`${verticalAlign}Left`} />
+    <Input position={`${verticalAlign}Right`} />
   </View>
 );
 

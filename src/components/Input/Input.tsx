@@ -8,10 +8,9 @@ import {
 
 interface InputProps{
     position: 'topRight' | 'topLeft' | 'bottomLeft' | 'bottomRight',
-    radius: 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius',
 }
 
-const Input = ({ position, radius, radiusSize }: InputProps) => {
+const Input = ({ position }: InputProps) => {
   let styles;
   position === 'topRight' && (styles = StyleSheet.create({
     container: {
