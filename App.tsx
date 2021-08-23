@@ -13,11 +13,11 @@ export default function App() {
     <Provider store={store}>
       <View style={styles.container}>
         <InputGroup
-          verticalAlign="top"
+          verticalAlign="Top"
         />
         <Box />
         <InputGroup
-          verticalAlign="bottom"
+          verticalAlign="Bottom"
         />
       </View>
     </Provider>
@@ -30,5 +30,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 });

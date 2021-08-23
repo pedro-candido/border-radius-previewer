@@ -5,58 +5,81 @@ import {
   Text,
   StyleSheet,
 } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from 'src/redux/store/configureStore.store';
 
 interface InputProps{
-    position: 'topRight' | 'topLeft' | 'bottomLeft' | 'bottomRight',
+    position: 'borderTopRightRadius' | 'borderTopLeftRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius',
 }
 
 const Input = ({ position }: InputProps) => {
-  let styles;
-  position === 'topRight' && (styles = StyleSheet.create({
+  const borders = useSelector((state: RootState) => state.borders);
+  const dispatch = useDispatch();
+
+  let borderStyle;
+
+  const styles = StyleSheet.create({
+    input: {
+      borderColor: '#ccc',
+      borderWidth: 2,
+      padding: 10,
+      borderRadius: borders[position],
+    },
+  });
+
+  position === 'borderTopRightRadius' && (borderStyle = StyleSheet.create({
     container: {
       position: 'absolute',
       bottom: 0,
-      left: 90,
+      left: 100,
       display: 'flex',
-      width: 100,
-      alignItems: 'flex-end',
+      minWidth: 90,
+      maxWidth: 90,
+      marginBottom: 5,
     },
   }));
 
-  position === 'topLeft' && (styles = StyleSheet.create({
+  position === 'borderTopLeftRadius' && (borderStyle = StyleSheet.create({
     container: {
       position: 'absolute',
       bottom: 0,
       right: 100,
       display: 'flex',
-      width: 85,
-      alignItems: 'flex-start',
+      minWidth: 90,
+      maxWidth: 90,
+      marginBottom: 5,
     },
   }));
 
-  position === 'bottomLeft' && (styles = StyleSheet.create({
+  position === 'borderBottomLeftRadius' && (borderStyle = StyleSheet.create({
     container: {
       position: 'absolute',
       top: 0,
       right: 100,
       display: 'flex',
       textAlign: 'left',
+      minWidth: 90,
+      maxWidth: 90,
+      marginTop: 5,
     },
   }));
 
-  position === 'bottomRight' && (styles = StyleSheet.create({
+  position === 'borderBottomRightRadius' && (borderStyle = StyleSheet.create({
     container: {
       position: 'absolute',
       top: 0,
       left: 100,
       display: 'flex',
+      minWidth: 90,
+      maxWidth: 90,
+      marginTop: 5,
     },
   }));
 
   return (
-    <View style={styles?.container}>
+    <View style={borderStyle?.container}>
       <Text>{ position }</Text>
-      <TextInput />
+      <TextInput style={styles.input} />
     </View>
   );
 };

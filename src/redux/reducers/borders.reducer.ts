@@ -3,8 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 const borders = createSlice({
   initialState: {
     borderTopLeftRadius: 0,
-    borderTopRightRadius: 0,
-    borderBottomLeftRadius: 0,
+    borderTopRightRadius: 5,
+    borderBottomLeftRadius: 10,
     borderBottomRightRadius: 0,
   },
   name: 'borders',
