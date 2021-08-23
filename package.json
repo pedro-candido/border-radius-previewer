@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "npx git-cz"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
@@ -21,10 +22,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@types/react": "~16.9.35",
+    "@types/react": "^16.9.56",
     "@types/react-native": "~0.63.2",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
+    "company-commit": "^1.1.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.24.1",
@@ -34,5 +37,10 @@
     "husky": "^7.0.0",
     "typescript": "~4.0.0"
   },
-  "private": true
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
