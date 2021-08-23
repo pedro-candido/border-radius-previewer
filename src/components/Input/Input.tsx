@@ -8,22 +8,36 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'src/redux/store/configureStore.store';
 
+import {
+  modifyLeftBottom,
+  modifyLeftTop,
+  modifyRightBottom,
+  modifyRightTop,
+} from '../../redux/reducers/borders.reducer';
+
 interface InputProps{
     position: 'borderTopRightRadius' | 'borderTopLeftRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius',
 }
 
 const Input = ({ position }: InputProps) => {
+  let borderStyle;
   const borders = useSelector((state: RootState) => state.borders);
   const dispatch = useDispatch();
+  const value = borders[position];
 
-  let borderStyle;
+  const handleChangeText = (event: HTMLInputElement) => {
+    if (position === 'borderTopRightRadius') dispatch(modifyRightTop(Number(event)));
+    if (position === 'borderTopLeftRadius') dispatch(modifyLeftTop(Number(event)));
+    if (position === 'borderBottomRightRadius') dispatch(modifyRightBottom(Number(event)));
+    if (position === 'borderBottomLeftRadius') dispatch(modifyLeftBottom(Number(event)));
+  };
 
   const styles = StyleSheet.create({
     input: {
       borderColor: '#ccc',
       borderWidth: 2,
       padding: 10,
-      borderRadius: borders[position],
+      borderRadius: 5,
     },
   });
 
@@ -79,7 +93,12 @@ const Input = ({ position }: InputProps) => {
   return (
     <View style={borderStyle?.container}>
       <Text>{ position }</Text>
-      <TextInput style={styles.input} />
+      <TextInput
+        style={styles.input}
+        keyboardType="numeric"
+        value={String(value)}
+        onChangeText={handleChangeText}
+      />
     </View>
   );
 };
