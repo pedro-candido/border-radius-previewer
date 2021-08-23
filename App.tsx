@@ -6,11 +6,13 @@ import { Provider } from 'react-redux';
 
 import store from './src/redux/store/configureStore.store';
 
+import { Box } from './src/components'
+
 export default function App() {
   return (
     <Provider store={store}>
       <View style={styles.container}>
-        <Text>Open up App.tsx to start working on your app!</Text>
+        <Box />
       </View>
     </Provider>
   );
