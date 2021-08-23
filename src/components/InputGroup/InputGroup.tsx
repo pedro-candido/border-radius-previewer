@@ -13,8 +13,8 @@ interface InputProps {
 }
 
 const InputGroup = ({ verticalAlign }: InputGroupProps) => {
-  const inputLeftPosition: () => InputProps = `border${verticalAlign}LeftRadius`;
-  const inputRightPosition: () => InputProps = `border${verticalAlign}RightRadius`;
+  const inputLeftPosition = `border${verticalAlign}LeftRadius`;
+  const inputRightPosition = `border${verticalAlign}RightRadius`;
 
   return (
     <View>
