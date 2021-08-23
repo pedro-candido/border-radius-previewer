@@ -1,12 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-import { View, Text } from 'react-native'
+import { View } from 'react-native';
 
-import { Input } from '../Input'
+import { Input } from '../Input';
 
-const InputGroup = () => <View>
-    <Input position='leftTop' />
-    <Input position='rightTop' />
-    <Input position='leftBottom' />
-    <Input position='rightBottom' />
-</View>
+interface InputGroupProps {
+    verticalAlign: 'top' | 'bottom',
+    radius: 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius'
+}
+
+const InputGroup = ({ verticalAlign, radius }: InputGroupProps) => (
+  <View>
+    <Input radius={radius} position={`${verticalAlign}Left`} />
+    <Input radius={radius} position={`${verticalAlign}Right`} />
+  </View>
+);
+
+export default InputGroup;
