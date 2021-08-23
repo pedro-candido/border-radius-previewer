@@ -6,3 +6,4 @@ const reducer = combineReducers({ borders: borderReducer });
 const store = configureStore({ reducer });
 
 export default store;
+export type RootState = ReturnType<typeof reducer>;

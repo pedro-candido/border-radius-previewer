@@ -2,24 +2,24 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const borders = createSlice({
   initialState: {
-    leftTop: 0,
-    rightTop: 0,
-    leftBottom: 0,
-    rightBottom: 0,
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 5,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 0,
   },
   name: 'borders',
   reducers: {
     modifyLeftTop(state, { payload }) {
-      state.leftTop = payload;
+      state.borderTopLeftRadius = payload;
     },
     modifyRightTop(state, { payload }) {
-      state.rightTop = payload;
+      state.borderTopRightRadius = payload;
     },
     modifyLeftBottom(state, { payload }) {
-      state.leftBottom = payload;
+      state.borderBottomLeftRadius = payload;
     },
     modifyRightBottom(state, { payload }) {
-      state.rightBottom = payload;
+      state.borderBottomRightRadius = payload;
     },
   },
 });

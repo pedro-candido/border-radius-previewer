@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
-  }
-})
+    alignItems: 'center',
+  },
+});
 
 export default Box;
