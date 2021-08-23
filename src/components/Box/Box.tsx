@@ -23,7 +23,7 @@ const Box = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Change my borderRadius</Text>
+      <Text>Change my border-radius</Text>
     </View>
   );
 };
