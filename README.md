@@ -15,7 +15,9 @@
 
 
 ## 📱 App Preview
-  <img width="200px" src="https://i.imgur.com/fauQI8A.gif" />
+  <p align="center">
+    <img width="200px" src="https://i.imgur.com/fauQI8A.gif" />
+  </p>
   
 ## Tech's
 
