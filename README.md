@@ -18,14 +18,6 @@ Because it's a simple app recommended by: <a href="https://github.com/florinpop1
   <p align="center">
     <img width="200px" src="https://i.imgur.com/fauQI8A.gif" />
   </p>
-  
-## Tech's
-
-- [x] Typescript
-- [x] React Native
-- [x] Redux
-- [x] Redux Toolkit
-- [x] Git Commitizen
 
 ## ⌨️ How to install?
 
@@ -56,3 +48,11 @@ Because it's a simple app recommended by: <a href="https://github.com/florinpop1
 ```
   npm run start
 ```
+
+## Tech's
+
+- [x] Typescript
+- [x] React Native
+- [x] Redux
+- [x] Redux Toolkit
+- [x] Git Commitizen
