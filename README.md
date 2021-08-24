@@ -7,7 +7,7 @@
     <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/pedro-candido/border-radius-previewer" />
   </p>
 
-# 😬 Border Radius Previewer
+# 😝 Border Radius Previewer
 Project that shows to user the borderRadius functionality
 
 ## ❓ Why this app?
