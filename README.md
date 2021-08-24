@@ -1,11 +1,11 @@
-<center width="100%">
+<p text-align="center" width="100%">
   <img src="https://img.shields.io/github/followers/pedro-candido?style=social" />
   <img alt="" src="https://img.shields.io/github/repo-size/pedro-candido/border-radius-previewer" />
   <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/pedro-candido/border-radius-previewer" />
   <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/pedro-candido/border-radius-previewer" />
   <img alt="GitHub Issues" src="https://img.shields.io/github/issues/pedro-candido/border-radius-previewer" />
   <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/pedro-candido/border-radius-previewer" />
-</center>
+</p>
 
 # Border Radius Previewer
 😬 Project that shows to user the borderRadius functionality
