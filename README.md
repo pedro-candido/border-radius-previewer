@@ -8,20 +8,14 @@
   </p>
 
 # Border Radius Previewer
-<p align="center">
 😬 Project that shows to user the borderRadius functionality
-</p>
 
 ## Why this app?
-<p align="center">
 ❓ Because it's a simple app recommended by: <a href="https://github.com/florinpop17/app-ideas">App Ideas</a>
-</p>
 
 
 ## 📱 App Preview
-<p align="center">
   <img width="200px" src="https://i.imgur.com/fauQI8A.gif" />
-</p>
   
 ## Tech's
 
