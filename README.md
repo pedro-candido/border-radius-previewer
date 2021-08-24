@@ -7,17 +7,21 @@
     <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/pedro-candido/border-radius-previewer" />
   </p>
 
+<center>
 # Border Radius Previewer
 😬 Project that shows to user the borderRadius functionality
-
-## Why this app?
-❓ Because it's a simple app recommended by: <a href="https://github.com/florinpop17/app-ideas">App Ideas</a>
-
-## 📱 App Preview
-<center>
-  <img width="200px" src="https://i.imgur.com/fauQI8A.gif" />
 </center>
 
+<center>
+## Why this app?
+❓ Because it's a simple app recommended by: <a href="https://github.com/florinpop17/app-ideas">App Ideas</a>
+</center>
+
+<center>
+## 📱 App Preview
+  <img width="200px" src="https://i.imgur.com/fauQI8A.gif" />
+</center>
+  
 ## Tech's
 
 - [x] Typescript
