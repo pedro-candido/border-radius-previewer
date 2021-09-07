@@ -1,19 +1,19 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { useSelector } from 'react-redux';
-import { RootState } from 'src/redux/store/configureStore.store';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
+import { useSelector } from "react-redux";
+import { selectBorderPosition } from "../Input/InputSelectors";
 
 const Box = () => {
-  const borders = useSelector((state: RootState) => state.borders);
+  const borders = useSelector(selectBorderPosition);
 
   const styles = StyleSheet.create({
     container: {
-      width: '90%',
+      width: "90%",
       height: 200,
-      backgroundColor: '#ccc',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
+      backgroundColor: "#ccc",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
       borderBottomLeftRadius: borders.borderBottomLeftRadius,
       borderBottomRightRadius: borders.borderBottomRightRadius,
       borderTopLeftRadius: borders.borderTopLeftRadius,
