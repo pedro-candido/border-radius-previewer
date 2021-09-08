@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  TextInput,
-  View,
-  Text,
-  StyleSheet,
-  TouchableWithoutFeedback,
-} from "react-native";
+import { TextInput, View, Text, StyleSheet } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 
 import {
