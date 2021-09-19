@@ -21,13 +21,13 @@ const Input = ({ position }: InputProps) => {
   const handleChangeText = (event: HTMLInputElement) => {
     switch (position) {
       case "borderTopRightRadius":
-        dispatch(modifyRightTop(Number(event)));
-      case "borderTopRightRadius":
-        dispatch(modifyLeftTop(Number(event)));
+        return dispatch(modifyRightTop(Number(event)));
+      case "borderTopLeftRadius":
+        return dispatch(modifyLeftTop(Number(event)));
       case "borderBottomRightRadius":
-        dispatch(modifyRightBottom(Number(event)));
+        return dispatch(modifyRightBottom(Number(event)));
       case "borderBottomLeftRadius":
-        dispatch(modifyLeftBottom(Number(event)));
+        return dispatch(modifyLeftBottom(Number(event)));
       default:
         break;
     }
