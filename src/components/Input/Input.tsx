@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  TextInput,
-  View,
-  Text,
-  StyleSheet,
-  TouchableWithoutFeedback,
-} from "react-native";
+import { TextInput, View, Text, StyleSheet } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 
 import {
@@ -25,14 +19,18 @@ const Input = ({ position }: InputProps) => {
   const dispatch = useDispatch();
   const value = useSelector(selectBorderPosition)[position];
   const handleChangeText = (event: HTMLInputElement) => {
-    if (position === "borderTopRightRadius")
-      dispatch(modifyRightTop(Number(event)));
-    if (position === "borderTopLeftRadius")
-      dispatch(modifyLeftTop(Number(event)));
-    if (position === "borderBottomRightRadius")
-      dispatch(modifyRightBottom(Number(event)));
-    if (position === "borderBottomLeftRadius")
-      dispatch(modifyLeftBottom(Number(event)));
+    switch (position) {
+      case "borderTopRightRadius":
+        return dispatch(modifyRightTop(Number(event)));
+      case "borderTopLeftRadius":
+        return dispatch(modifyLeftTop(Number(event)));
+      case "borderBottomRightRadius":
+        return dispatch(modifyRightBottom(Number(event)));
+      case "borderBottomLeftRadius":
+        return dispatch(modifyLeftBottom(Number(event)));
+      default:
+        break;
+    }
   };
 
   const styles = StyleSheet.create({
